@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <sys/resource.h>
+
+int main() {
+	struct rlimit lim;
+	lim = getrlimit();
+	printf("stack size: %ld\n", lim.RLIMIT_STACK);
+	printf("process limit: %ld\n", lim.);
+	printf("max file descriptors: %ld\n", 0L);
+	return 0;
+}
